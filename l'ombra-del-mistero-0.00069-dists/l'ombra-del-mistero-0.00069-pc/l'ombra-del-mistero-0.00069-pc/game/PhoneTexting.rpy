@@ -1,7 +1,7 @@
 # Here's the code for the phone!
 
 define nvl_mode = "phone"  ##Allow the NVL mode to become a phone conversation
-define MC_Name = "Noi" ##The name of the main character, used to place them on the screen
+define MC_Name = "Io" ##The name of the main character, used to place them on the screen
 
 init -1 python:
     phone_position_x = 0.3
@@ -101,9 +101,9 @@ screen nvl_phonetext(dialogue):
                 #If this is the first message of the character, show an icon
                 if previous_d_who != d.who:
                     if d.who == MC_Name:
-                        $ message_icon = "detective.png"
+                        $ message_icon = "Capo.png"
                     else:
-                        $ message_icon = "woman.png"
+                        $ message_icon = "Io.png"
 
                     add message_icon:
                         if d.current:
